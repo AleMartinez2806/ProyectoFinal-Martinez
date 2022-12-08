@@ -1,0 +1,347 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-fluid {
+    color: #04202C; 
+}
+  
+  h1, h2, p {
+    color: #000000f8; 
+}
+
+  .title {
+    font-size: 50px;
+    text-decoration: none;
+    color: #000000f8;
+}
+
+  .title:hover{ 
+    text-transform: uppercase;
+    text-decoration: underline;
+    transition: all 0.4s ease-in-out;
+    font-size: 70px;
+    color: white;
+}
+  
+  .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show > .nav-link {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 18px;
+    color: #000000f8; 
+}
+  
+  .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 18px;
+    color: #000000f8; 
+}
+  
+  .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.4s ease-in-out;
+    font-size: 20px;
+    color: white; 
+}
+  
+  .navbar-collapse {
+    flex-grow: 0; 
+}
+  
+  .navbar {
+    padding-top: 0px;
+    padding-bottom: 0px; 
+}
+  
+  .navbar-light .navbar-toggler {
+    border-color: white;
+}
+
+  .navbar-brand img {
+    width: 150px;
+}
+
+body{
+    background: #04202C;
+    }
+img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#boton-carrito {
+    border: none;
+    color: #000000f8;
+    font-size: 18px;
+    background-color: #96cce3;
+    border-radius: 50%;
+    padding: 10px 20px;
+    transition: all .3s; 
+}
+
+#boton-carrito:hover {
+    text-transform: uppercase;
+    text-decoration: underline;
+    transition: all 0.4s ease-in-out;
+    font-size: 22px;
+    color: black;
+    background: skyblue;
+}
+
+
+#boton-carrito:focus {
+    outline: none; 
+}
+
+#contenedor-productos {
+    max-width: 1200px;
+    margin: 60px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+}
+
+p {
+    line-height: 1.8; 
+}
+
+.producto {
+    max-width: 20%;
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: 20px;    
+    background-color: lightcyan;
+    border-radius: 20px;
+}
+
+.precioProducto {
+    font-weight: 700;
+}
+
+.boton-agregar {
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    padding: 5px;
+    border: none;
+    margin-left: 25%;
+}
+
+.boton-agregar:hover {
+    text-transform: uppercase;
+    text-decoration: underline;
+    transition: all 0.4s ease-in-out;
+    font-size: 22px;
+    color: black;
+    background: skyblue; 
+}
+
+.boton-vaciar {
+    background-color: red;
+    color: white;
+    font-size: 18px;
+    padding: 5px;
+    border: none;
+}  
+
+.boton-vaciar:hover {
+    text-transform: uppercase;
+    text-decoration: underline;
+    transition: all 0.4s ease-in-out;
+    font-size: 22px;
+    color: black;
+    background: lightcoral; 
+}
+
+.boton-finalizar {
+    background-color: royalblue;
+    color: white;
+    font-size: 18px;
+    padding: 5px;
+    border: none;
+}  
+
+  .boton-finalizar:hover {
+    text-transform: uppercase;
+    text-decoration: underline;
+    transition: all 0.4s ease-in-out;
+    font-size: 22px;
+    color: black;
+    background: skyblue; 
+}
+
+.modal-contenedor {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal-active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-carrito {
+    position: relative;
+    background-color: white;
+    min-width: 500px;
+    padding: 20px;
+    margin-top: -100%;
+    transition: all .5s;
+}
+
+.modal-active .modal-carrito {
+    margin-top: 0;
+}
+
+.modal-carrito h3 {
+    color: black;
+    padding-bottom: 5px;
+}
+
+.modal-carrito #carritoCerrar {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 20px;
+    color: black;
+    border: none;
+    background-color: white;
+}
+
+.modal-carrito #carritoCerrar:hover {
+    cursor: pointer;
+}
+
+.modal-carrito #carritoCerrar:focus {
+    outline: none;
+}
+
+.modal-carrito .precioProducto {
+    padding-top: 10px;    
+}
+
+.productoEnCarrito {
+    border-left: 5px solid lightblue;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    margin: 5px 0;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.productoEnCarrito:hover {
+    border-left: 5px solid royalblue;
+}
+
+.boton-eliminar {
+    background-color: white;
+    color: red;
+    border: none;
+    font-size: 20px;
+}
+
+.boton-eliminar:hover {
+    cursor: pointer;
+}
+
+.boton-eliminar:focus {
+    outline: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0; }
+  
+  .titulo {
+    text-align: center;
+    font-size: 3em; }
+  
+  .contacto {
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3); }
+  
+  .contacto-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+  
+  .contacto-form form label {
+    display: block; }
+  
+  .contacto-form form p {
+    margin: 0;
+    padding: 1em; }
+  
+  .contacto-form form .block {
+    grid-column: 1 / 3; }
+  
+  .contacto-form form button,
+  .contacto-form form input,
+  .contacto-form form textarea {
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: 0;
+    color: #14022f;
+    border-bottom: 1px solid #14022f; }
+  
+  .contacto-form form button {
+    background: #B3A381;
+    color: black;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em; }
+  
+  .contacto-form form button:hover,
+  .contacto-form form button:focus {
+    background: #d63031;
+    color: #fff;
+    transition: background-color 1s ease-out;
+    outline: 0; }
+  
+  /* CONTACT INFO */
+  .contacto-info h4, .contacto-info ul, .contacto-info p {
+    text-align: center;
+    margin: 0 0 1rem 0; }
+  
+  .contacto-info li {
+    color: #14022f; }
+
+  .contacto-info img {
+    width: 150px;
+  }
+  
+.gracias img{
+  height: 550px;
+  max-width: 100%;
+  max-height: 100%; 
+} 
+
+  /* MEDIA */
+  @media (min-width: 700px) {
+    .contacto {
+      display: grid;
+      grid-template-columns: 3fr 1fr; }
+    .contacto-info h4,
+    .contacto-info ul,
+    .contacto-info p {
+      text-align: center; } }
+  
+    
+  html body {
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #96cce3; }
+  
